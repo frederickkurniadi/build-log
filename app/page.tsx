@@ -27,9 +27,9 @@ export default async function HomePage({
     <div className="min-h-screen">
       <SiteHeader />
       <main className="container mx-auto max-w-6xl px-6 py-12">
-        <div className="mb-10 flex items-end justify-between gap-4">
+        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="text-4xl font-semibold tracking-tight">Frederick&rsquo;s Build Log</h1>
+            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Frederick&rsquo;s Build Log</h1>
             <p className="mt-2 text-muted-foreground">
               A running log of projects I&rsquo;ve built with Claude.
             </p>
@@ -73,7 +73,7 @@ export default async function HomePage({
               <thead>
                 <tr className="border-b border-border bg-muted/40 text-xs font-medium text-muted-foreground">
                   <th className="w-16 px-4 py-2"></th>
-                  <th className="px-4 py-2 text-left font-medium">Date</th>
+                  <th className="hidden px-4 py-2 text-left font-medium sm:table-cell">Date</th>
                   <th className="px-4 py-2 text-left font-medium">Project</th>
                   <th className="px-4 py-2 text-left font-medium">Status</th>
                   <th className="hidden px-4 py-2 text-left font-medium sm:table-cell">Category</th>

@@ -55,7 +55,7 @@ export function BuildForm({
         </DialogHeader>
 
         <form action={action} className="space-y-4">
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div className="space-y-1.5">
               <Label htmlFor="date">Date</Label>
               <Input
@@ -81,7 +81,7 @@ export function BuildForm({
             <Input id="project_name" name="project_name" required defaultValue={initial?.project_name ?? ''} />
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div className="space-y-1.5">
               <Label htmlFor="category">Category</Label>
               <Input id="category" name="category" placeholder="Web app, tool, …" defaultValue={initial?.category ?? ''} />
@@ -108,7 +108,7 @@ export function BuildForm({
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div className="space-y-1.5">
               <Label htmlFor="live_link">Live link</Label>
               <Input id="live_link" name="live_link" type="url" placeholder="https://…" defaultValue={initial?.live_link ?? ''} />

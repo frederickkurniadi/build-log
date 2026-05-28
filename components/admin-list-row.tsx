@@ -43,7 +43,7 @@ export function AdminListRow({
         </div>
       </td>
 
-      <td className="whitespace-nowrap px-4 py-3 text-xs text-muted-foreground">
+      <td className="hidden whitespace-nowrap px-4 py-3 text-xs text-muted-foreground sm:table-cell">
         {formatDate(build.date)}
       </td>
 
