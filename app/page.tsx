@@ -20,7 +20,7 @@ export default async function HomePage() {
       <main className="container mx-auto max-w-6xl px-6 py-12">
         <div className="mb-10 flex items-end justify-between gap-4">
           <div>
-            <h1 className="text-4xl font-semibold tracking-tight">Build Log</h1>
+            <h1 className="text-4xl font-semibold tracking-tight">Frederick&rsquo;s Build Log</h1>
             <p className="mt-2 text-muted-foreground">
               A running log of projects I&rsquo;ve built with Claude.
             </p>

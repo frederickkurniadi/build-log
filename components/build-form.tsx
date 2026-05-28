@@ -16,6 +16,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { BUILD_STATUSES, type Build } from '@/lib/types'
+import { ToolPicker } from '@/components/tool-picker'
 import { Plus } from 'lucide-react'
 
 type Action = (formData: FormData) => void | Promise<void>
@@ -92,14 +93,8 @@ export function BuildForm({
           </div>
 
           <div className="space-y-1.5">
-            <Label htmlFor="tools_used">Tools used</Label>
-            <Input
-              id="tools_used"
-              name="tools_used"
-              placeholder="GitHub, Supabase, Vercel"
-              defaultValue={initial?.tools_used?.join(', ') ?? ''}
-            />
-            <p className="text-xs text-muted-foreground">Comma-separated.</p>
+            <Label>Tools used</Label>
+            <ToolPicker defaultValue={initial?.tools_used ?? []} />
           </div>
 
           <div className="space-y-1.5">

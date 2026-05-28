@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ExternalLink, Github } from 'lucide-react'
 import { StatusBadge } from '@/components/status-badge'
+import { ToolTag } from '@/components/tool-tag'
 import type { Build } from '@/lib/types'
 
 function formatDate(date: string) {
@@ -49,12 +50,7 @@ export function BuildCard({ build }: { build: Build }) {
         {build.tools_used && build.tools_used.length > 0 && (
           <div className="flex flex-wrap gap-1.5">
             {build.tools_used.map((tool) => (
-              <span
-                key={tool}
-                className="rounded-md border border-border bg-background px-2 py-0.5 text-xs text-muted-foreground"
-              >
-                {tool}
-              </span>
+              <ToolTag key={tool} name={tool} />
             ))}
           </div>
         )}
